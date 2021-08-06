@@ -1,0 +1,16 @@
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+		id="WebApp_ID" >
+		  
+	<welcome-file-list> <!-- 서버 실행시 메인화면을 띄워줌 -->
+	<welcome-file>/WatchDogs/src/main/webapp/index.jsp</welcome-file>
+	<welcome-file>/WatchDogs/src/main/webapp/home.jsp</welcome-file> 
+	</welcome-file-list>
+	
+	<error-page> <!-- 404 에러 발생 시 -->
+		<error-code>404</error-code>
+		<location>/WatchDogs/src/main/webapp/404error.jsp</location>		
+	</error-page>
+	
+</web-app>
